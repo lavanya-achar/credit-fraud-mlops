@@ -57,7 +57,7 @@ credit-fraud-mlops/
 └── README.md # Documentation (you are here)
 
 
-🐳 Docker Setup
+## 🐳 Docker Setup
 Build Docker Image
 docker build -t credit-fraud-mlops .
 
@@ -67,8 +67,9 @@ docker run -p 8080:8080 credit-fraud-mlops
 
 Now open http://localhost:8080
  to access the app.
+--
 
-🧪 How to Run Locally
+## 🧪 How to Run Locally
 Step 1️⃣ Clone the repository
 git clone https://github.com/lavanya-achar/credit-fraud-mlops.git
 cd credit-fraud-mlops
@@ -77,19 +78,28 @@ Step 2️⃣ Create a virtual environment
 python -m venv venv
 venv\Scripts\activate    # (On Windows)
 
+Step 3️⃣ Install dependencies
+pip install -r requirements.txt
 
-📈 Model Performance
-Metric	Value
-Accuracy	98.7%
-Precision	94.5%
-Recall	91.2%
-F1-Score	92.8%
-ROC-AUC	0.98
+Step 4️⃣ Train the model (if needed)
+python src/train_model.py
+
+Step 5️⃣ Run the application
+python dashboard.py
+
+
+ ## 📈 Model Performance
+-Metric	Value
+-Accuracy	98.7%
+-Precision	94.5%
+-Recall	91.2%
+-F1-Score	92.8%
+- ROC-AUC	0.98
 
 📊 The model performs exceptionally well at detecting fraudulent transactions while maintaining a low false positive rate.
 Feature importance shows that transaction amount, time, and feature V14 were the most significant predictors.
 
-🧩 MLOps Lifecycle Summary
+## 🧩 MLOps Lifecycle Summary
 
 Data Versioning – Maintain datasets locally or via DVC.
 
@@ -101,7 +111,7 @@ CI/CD Automation – GitHub Actions runs automatically on every code update.
 
 Deployment Ready – Dockerized app can be deployed on AWS / Azure / Render.
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Integrate MLflow for experiment tracking.
 
