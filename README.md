@@ -55,6 +55,8 @@ credit-fraud-mlops/
 │ └── cicd.yml # GitHub Actions CI/CD pipeline
 │
 └── README.md # Documentation (you are here)
+
+
 🐳 Docker Setup
 Build Docker Image
 docker build -t credit-fraud-mlops .
@@ -74,17 +76,7 @@ cd credit-fraud-mlops
 Step 2️⃣ Create a virtual environment
 python -m venv venv
 venv\Scripts\activate    # (On Windows)
-# or
-source venv/bin/activate # (On macOS/Linux)
 
-Step 3️⃣ Install dependencies
-pip install -r requirements.txt
-
-Step 4️⃣ Train the model (if needed)
-python src/train_model.py
-
-Step 5️⃣ Run the application
-python dashboard.py
 
 📈 Model Performance
 Metric	Value
