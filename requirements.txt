@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+xgboost
+fastapi
+uvicorn
+streamlit
+mlflow
+dvc
+shap
+pytest
+docker==5.0.3
+prometheus-client
+plotly
+requests
